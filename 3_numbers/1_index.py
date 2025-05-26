@@ -36,4 +36,3 @@ print(seta - setb)
 # print(seta * setb) # TypeError: unsupported operand type(s) for *: 'set' and 'set'
 print(seta | setb)
 print(seta & setb)
-print(seta  setb)
