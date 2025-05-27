@@ -1,7 +1,27 @@
 # basic things are already covered like conversion, types identification, etc.
 """
-python is very powerful when it comes to working with numbers
+- python is very powerful when it comes to working with numbers
+- there are three numeric types in python
+    int,
+    float,
+    complex
 """
+
+"""
+int : Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+    - means here the limit of int is only bounded by availabel memory
+"""
+
+#type conversion
+a = 1
+b = 1.1
+c = 2 + 3j
+print(float(a)) # 1.0
+print(int(b)) # 1
+print(complex(a)) # (1+0j)
+print(complex(b)) # (1.1+0j)
+print(int(c)) # error
+print(float(c)) # error
 
 # math library
 import math
