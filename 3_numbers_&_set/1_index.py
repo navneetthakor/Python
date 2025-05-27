@@ -51,33 +51,3 @@ print(random.randint(1,100)) # in range of 1 to 100
 """
 sets : sets are also treated as numbers
 """
-# noraml operations on set
-seta = {1,2,3}
-setb = {2,3,4}
-print(seta - setb)
-# print(seta + setb) # TypeError: unsupported operand type(s) for +: 'set' and 'set'
-# print(seta * setb) # TypeError: unsupported operand type(s) for *: 'set' and 'set'
-print(seta | setb)
-print(seta & setb)
-
-
-#not allowed
-print({{"navneet": "mayur"}} - {{"navneet": "mayur"}})
-
-"""
-we cannot use list, dict, or other mutable types inside a set
-->  Reason:
-Python sets require all elements to be hashable.
-But mutable types are not hashable, because their contents can change — breaking the rules of how sets/dictionaries track uniqueness.
-
--> work around by using fronzenset, json.dump() [convert to string]
-🧾 Summary:
-Type	    Mutable	Hashable	Can be in Set?
-list	    ✅	    ❌	    ❌
-dict	    ✅	    ❌	    ❌
-set	        ✅	    ❌	    ❌
-tuple	    ❌	    ✅	    ✅
-frozenset	❌	    ✅	    ✅
-str	        ❌	    ✅	    ✅
-numbers	    ❌	    ✅	    ✅ (int, float, complex)
-"""
