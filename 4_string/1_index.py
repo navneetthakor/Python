@@ -1,3 +1,9 @@
+"""
+Strings are Arrays : 
+-> Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+-> However, Python does not have a character data type, a single character is simply a string with a length of 1.
+"""
+
 name = "navneet"
 
 # first char
@@ -18,12 +24,15 @@ result = name.replace('ee','i')
 print(result)
 
 a = "nk,meet,eb,hina"
-print(a.split(","))
+print(a.split("c")) # if split operator not found then entire string at first location
 print(a.find('me')) # -1 if not found
 print(a.count('e'))
 
 #string manipulation
+# 1st way
 print("my name is {}".format(name))
+# 2nd way
+print(f"my name is {name}")
 
 #list to string
 print("-".join(a.split(",")))
