@@ -9,3 +9,4 @@ print(my_multiplier(54))
 
 full_name = lambda fname,lname : f"Hello Mr. {fname.capitalize()} {lname.capitalize()}"
 print(full_name("navneet","Thakor"))
+
